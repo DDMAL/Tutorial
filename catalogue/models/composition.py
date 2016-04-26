@@ -6,4 +6,5 @@ class Composition(models.Model):
         app_label = "catalogue"
 
     name = models.CharField(max_length=64)
-    composer = models.ForeignKey("catalogue.Composer")
+    composer = models.ForeignKey("catalogue.Composer", blank=True, null=True)
+    anonymous = models.BooleanField(default=False)
