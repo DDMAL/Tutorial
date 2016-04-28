@@ -14,6 +14,9 @@ class Source(models.Model):
     type = models.CharField(max_length=128, blank=True, null=True)
     archive = models.ForeignKey("catalogue.Archive", blank=True, null=True)
 
+    def __str__(self):
+        return self.display_name
+
     @property
     def display_name(self):
         if self.name:
