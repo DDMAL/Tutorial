@@ -9,3 +9,6 @@ class Archive(models.Model):
     city = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
     siglum = models.CharField(max_length=255)
+
+    def __str__(self):
+        return "{0}".format(self.name)
