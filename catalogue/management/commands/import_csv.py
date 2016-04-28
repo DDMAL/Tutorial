@@ -57,7 +57,7 @@ class Command(BaseCommand):
             for row in contents:
                 print(row)
                 anonymous = False
-                if row['composer'] is 'no composer/anon':
+                if row['composer'] == 'no composer/anon':
                     anonymous = True
 
                 source = self._get_source(row)
