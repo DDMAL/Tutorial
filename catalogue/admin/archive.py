@@ -4,4 +4,4 @@ from catalogue.models.archive import Archive
 
 @admin.register(Archive)
 class ArchiveAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'city', 'country', 'siglum')

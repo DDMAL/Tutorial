@@ -4,4 +4,4 @@ from catalogue.models.composer import Composer
 
 @admin.register(Composer)
 class ComposerAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name',)
