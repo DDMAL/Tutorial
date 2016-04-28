@@ -19,4 +19,4 @@ class Source(models.Model):
         if self.name:
             return "{0} ({1})".format(self.shelfmark, self.name)
         else:
-            return "{0}".format(self.name)
+            return "{0}".format(self.shelfmark)
