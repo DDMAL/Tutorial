@@ -7,15 +7,20 @@ class SourceSearchSerializer(serializers.ModelSerializer):
         model = Source
         fields = ('type',
                   'pk',
-                  'shelfmark',
-                  'name',
-                  'start_date',
-                  'end_date',
-                  'source_type')
+                  'shelfmark_s',
+                  'name_s',
+                  'start_date_i',
+                  'end_date_i',
+                  'source_type_s')
 
     type = serializers.SerializerMethodField()
     pk = serializers.ReadOnlyField()
-    source_type = serializers.Field(source='type')
+    source_type_s = serializers.ReadOnlyField(source='type')
+    shelfmark_s = serializers.ReadOnlyField(source="shelfmark")
+    name_s = serializers.ReadOnlyField(source="name")
+    start_date_i = serializers.ReadOnlyField(source="start_date")
+    end_date_i = serializers.ReadOnlyField(source="end_date")
+
 
     def get_type(self, obj):
         return self.Meta.model.__name__.lower()
