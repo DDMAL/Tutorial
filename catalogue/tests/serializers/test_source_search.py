@@ -19,8 +19,8 @@ class TestSourceSearchSerializer(APITestCase):
     def test_source_serialization(self):
         serialized = SourceSearchSerializer(self.source)
         self.assertEqual(serialized.data['type'], 'source')
-        self.assertEqual(serialized.data['shelfmark'], 'MS 123')
-        self.assertIsNone(serialized.data['source_type'])
+        self.assertEqual(serialized.data['shelfmark_s'], 'MS 123')
+        self.assertIsNone(serialized.data['source_type_s'])
 
     def tearDown(self):
         pass
