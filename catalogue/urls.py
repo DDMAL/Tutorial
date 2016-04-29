@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from catalogue.views.source import SourceDetailView, SourceListView
+from catalogue.views.archive import ArchiveDetailView, ArchiveListView
 
 urlpatterns = [
     url(r'^sources/$', SourceListView.as_view(), name="source-list"),
     url(r'^sources/(?P<pk>[0-9]+)/$', SourceDetailView.as_view(), name="source-detail"),
+    url(r'^archives/$', ArchiveListView.as_view(), name="archive-list"),
+    url(r'^archives/(?P<pk>[0-9]+)/$', ArchiveDetailView.as_view(), name="archive-detail"),
     url(r'^admin/', admin.site.urls),
 ]
