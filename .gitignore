@@ -2,3 +2,5 @@
 __pycache__/*
 tutenv
 __pycache__
+solr/data
+data
