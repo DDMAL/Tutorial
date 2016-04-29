@@ -9,8 +9,7 @@ class TestSourceIndexing(APITestCase):
     @override_settings(SOLR={'SERVER': 'http://localhost:8983/solr/test_catalogue/'})
     def setUp(self):
         self.server = pysolr.Solr(settings.SOLR['SERVER'])
-        # empty solr before every run.
-        # self.server.delete(q="*:*")
+        # empty solr after every run.
 
     @override_settings(SOLR={'SERVER': 'http://localhost:8983/solr/test_catalogue/'})
     def test_solr_index_on_create(self):
@@ -54,4 +53,4 @@ class TestSourceIndexing(APITestCase):
         self.assertTrue(q.docs[0]['name_s'] == source_name)
 
     def tearDown(self):
-        pass
+        self.server.delete(q="*:*")
