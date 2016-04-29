@@ -1,6 +1,5 @@
 from rest_framework.test import APITestCase
 from model_mommy import mommy
-from catalogue.models.source import Source
 
 
 class SourceTest(APITestCase):
