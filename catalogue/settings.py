@@ -125,3 +125,10 @@ STATIC_URL = '/static/'
 SOLR = {
     'SERVER': 'http://localhost:8983/solr/catalogue/'
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'catalogue.renderers.html_renderer.HTMLRenderer',
+        'rest_framework.renderers.JSONRenderer'
+    )
+}
