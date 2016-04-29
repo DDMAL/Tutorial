@@ -1,10 +1,13 @@
+from django.db.models import signals
+from catalogue.signals.source_signals import index_source
+from catalogue.models.source import Source
 from rest_framework.test import APITestCase
 from model_mommy import mommy
 
 
 class SourceTest(APITestCase):
     def setUp(self):
-        pass
+        signals.post_save.disconnect(index_source, sender=Source)
 
     def test_display_name_shelfmark_only(self):
         shelfmark = "Q. 123"
