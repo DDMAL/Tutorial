@@ -121,7 +121,7 @@ Use spaces, not tabs. Tabs should only appear in files that require them for sem
     }
 
 ##### Wrong:
-
+```
     function main()
     {
             return 0;
@@ -131,7 +131,7 @@ Use spaces, not tabs. Tabs should only appear in files that require them for sem
     {
 \t  \t  return 0;
     }
-
+```
 ---
 
 A case label should be indented once from its switch statement. The case statement is indented once from its label. There should be one blank line between case + code blocks.
