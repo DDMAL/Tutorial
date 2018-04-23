@@ -23,7 +23,7 @@ The biggest exception to all of these guidelines is that, should you find yourse
 
 1. [Spaces, not Tabs](http://legacy.python.org/dev/peps/pep-0008/#code-lay-out). This applies for *all* code you write. You must set your editor to insert four spaces per tab character.
 
-2. [Avoid Extraeous White Space](http://legacy.python.org/dev/peps/pep-0008/#id17).
+2. [Avoid Extraeous White Space](https://legacy.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements).
 
 3. [Keep Comments Clear and Up-to-date](https://legacy.python.org/dev/peps/pep-0008/#comments).
 
