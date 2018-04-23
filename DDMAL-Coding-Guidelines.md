@@ -25,7 +25,7 @@ The biggest exception to all of these guidelines is that, should you find yourse
 
 2. [Avoid Extraeous White Space](http://legacy.python.org/dev/peps/pep-0008/#id17).
 
-3. [Keep Comments Clear and Up-to-date](http://legacy.python.org/dev/peps/pep-0008/#id20).
+3. [Keep Comments Clear and Up-to-date](https://legacy.python.org/dev/peps/pep-0008/#comments).
 
 5. [Limit Nested Statements](http://programmers.stackexchange.com/questions/52685/if-you-need-more-than-3-levels-of-indentation-youre-screwed). Nested `if`s, `for`s, `while`s, and `switch`es should be limited to three levels, not more. If you find yourself exceeding this limit, you should investigate ways of collapsing it. Long, nested code blocks are hard to read, and, more importantly, hard to debug.
 
