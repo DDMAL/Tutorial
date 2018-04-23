@@ -70,7 +70,7 @@ for x in blah:
 mylist = [x for x in blah if munge_ex(x) = something]
 ```
 
-4. [Follow Naming Conventions](http://legacy.python.org/dev/peps/pep-0008/#id20). For Python, variables and functions should be all lower-case and separated by underscores. Class names should be CapWords. Example:
+4. [Follow Naming Conventions](https://legacy.python.org/dev/peps/pep-0008/#naming-conventions). For Python, variables and functions should be all lower-case and separated by underscores. Class names should be CapWords. Example:
 
 ```
 class MyClass(object):
