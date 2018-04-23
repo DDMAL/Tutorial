@@ -78,7 +78,7 @@ class MyClass(object):
         my_name = "mud"
 ```
 
-Since Python has no formal means of encapsulation (See the "[We are all consenting adults](http://codingstyleguide.com/style/39/we-are-all-consenting-adults)" rule), you should prefix internal helper methods with a single underscore. A double underscore can be used if you want the Python interpreter to apply name mangling, but you should [understand the consequences of this](http://legacy.python.org/dev/peps/pep-0008/#designing-for-inheritance).
+Since Python has no formal means of encapsulation (See the "[We are all consenting adults](http://python-guide-chinese.readthedocs.io/zh_CN/latest/writing/style.html#we-are-all-consenting-adults)" rule), you should prefix internal helper methods with a single underscore. A double underscore can be used if you want the Python interpreter to apply name mangling, but you should [understand the consequences of this](http://legacy.python.org/dev/peps/pep-0008/#designing-for-inheritance).
 
 For JavaScript, named functions and variables should be mixedCase. The exception to this is that if you are creating a function that operates like a class. "Private" methods should be prefixed by an underscore.
 
